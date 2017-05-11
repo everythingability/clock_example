@@ -112,7 +112,8 @@
     //Draw clock pointers but this time rotate the canvas rather than
     //calculate x/y start/end positions.
     //
-    //Draw hour hand
+    
+    //Draw hour hand. Needs to be more than a line
     c2d.rotate(Math.PI/6*(hrs+(min/60)+(sec/3600)));
     c2d.beginPath();
     c2d.lineWidth=8;
